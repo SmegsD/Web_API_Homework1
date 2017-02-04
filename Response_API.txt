@@ -1,0 +1,11 @@
+Response:
+
+Drew Smegner
+CSCI - 3800 001
+Web APIs
+2/4/2017
+
+Requests/Responses
+
+Postman uses the HTTP requests to test to see if the API’s are working correctly, and that your user calls are functioning in the proper form. The HTTP header parses the response body using an environment variable. This environment variable “book_title” was set to “Turing” per the assignment prompt. After that the response body is put into a JSON variable that I called “id” . Using this variable allowed us to take the book as an object and put the book’s id number into a variable. The next header took the id from the variable and shows the book object containing that id number , which is all of the
+information and descriptions associated with that book of that id.Chaining these two ‘get’ requests together allowed us to create an environment variable and receive back our response that was the book ‘id’. The responses each ‘get’ produces tells us how fast the API succeed, if it did or not, as well as the number of responses , and any errors we may have received with a description of how to solve such errors. 

@@ -1,0 +1,55 @@
+{
+	"id": "9793b84c-9370-b054-7384-f6ca05c1a871",
+	"name": "Homework_1_Smegner",
+	"description": "",
+	"order": [
+		"fcd0c4f7-b1a2-44f6-ad9d-fcdb256883b6",
+		"65da9505-334d-121a-7da2-4b407d29197b"
+	],
+	"folders": [],
+	"timestamp": 1486240815937,
+	"owner": "1525971",
+	"public": false,
+	"requests": [
+		{
+			"id": "65da9505-334d-121a-7da2-4b407d29197b",
+			"headers": "",
+			"url": " https://www.googleapis.com/books/v1/volumes?q={{book_title}}",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "9793b84c-9370-b054-7384-f6ca05c1a871",
+			"data": null,
+			"dataMode": "params",
+			"name": " https://www.googleapis.com/books/v1/volumes?q={{book_title}}",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1486240848002,
+			"version": 2,
+			"responses": [],
+			"tests": "var jsonData = JSON.parse(responseBody);\npostman.setEnvironmentVariable(\"id\", jsonData.items[2].id);",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "fcd0c4f7-b1a2-44f6-ad9d-fcdb256883b6",
+			"headers": "",
+			"url": " https://www.googleapis.com/books/v1/volumes/{{id}}",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "9793b84c-9370-b054-7384-f6ca05c1a871",
+			"data": null,
+			"dataMode": "params",
+			"name": " https://www.googleapis.com/books/v1/volumes/{{id}}",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1486240840118,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
